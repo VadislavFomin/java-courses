@@ -2,13 +2,15 @@ public class Calculate {
 	public static void main(String[] arg){
 		System.out.println("Calculate...");
 
-		int first = Integer.valueOf(arg[0]);
-		int second = Integer.valueOf(arg[1]);
+		double first = doubleValue(arg[0]);
+		double second = doubleValuev(arg[1]);
 
-		int sum = first + second;
-		int mult = first * second;
-		int power = first^second;
-		int priv = first / second;
+		double sum = first + second;
+		double mult = first * second;
+		double power = Math.power();
+		double priv = first / second;
+		
+		
 
 		System.out.println("Sum " + sum);
 		System.out.println("Mult " + mult);
