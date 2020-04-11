@@ -1,15 +1,15 @@
 /**
-	класс реализует калькулятор
+	РєР»Р°СЃСЃ СЂРµР°Р»РёР·СѓРµС‚ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ
 */
 public class Calculator {
 	/**
-		результат вычислений
+		СЂРµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёСЃР»РµРЅРёР№
 	*/
 	private int result;
 	
 	/**
-		Опреация сложения
-		@param params аргументы суммирования
+		РћРїСЂРµР°С†РёСЏ СЃР»РѕР¶РµРЅРёСЏ
+		@param params Р°СЂРіСѓРјРµРЅС‚С‹ СЃСѓРјРјРёСЂРѕРІР°РЅРёСЏ
 	*/
 	public void add(int ...params){
 		for (Integer param: params) {
@@ -17,43 +17,43 @@ public class Calculator {
 		}
 	}
 	/**
-		Опреация вычитания
-		@param param1, param2 аргументы разности
+		РћРїСЂРµР°С†РёСЏ РІС‹С‡РёС‚Р°РЅРёСЏ
+		@param param1, param2 Р°СЂРіСѓРјРµРЅС‚С‹ СЂР°Р·РЅРѕСЃС‚Рё
 	*/
 	public void subtract (int param1, int param2){	
 			this.result = param1 - param2;
 	}
 	/**
-		Опреация умножения
-		@param param1, param2 аргументы произведения
+		РћРїСЂРµР°С†РёСЏ СѓРјРЅРѕР¶РµРЅРёСЏ
+		@param param1, param2 Р°СЂРіСѓРјРµРЅС‚С‹ РїСЂРѕРёР·РІРµРґРµРЅРёСЏ
 	*/
 	public void multipl (int param1, int param2){	
 			this.result = param1 * param2;
 	}
 	/**
-		Опреация деления
-		@param param1, param2 аргументы частного
+		РћРїСЂРµР°С†РёСЏ РґРµР»РµРЅРёСЏ
+		@param param1, param2 Р°СЂРіСѓРјРµРЅС‚С‹ С‡Р°СЃС‚РЅРѕРіРѕ
 	*/
 	public void division (int param1, int param2){	
 			this.result = param1 / param2;
 	}
 	/**
-		Опреация степени
-		@param param1, param2 аргументы степени
+		РћРїСЂРµР°С†РёСЏ СЃС‚РµРїРµРЅРё
+		@param param1, param2 Р°СЂРіСѓРјРµРЅС‚С‹ СЃС‚РµРїРµРЅРё
 	*/
 	public void power (int param1, int param2){	
 			this.result = (int) Math.pow(param1, param2);
 	}
 	/**
-		Получить результат выражения
-		@return результат выражения
+		РџРѕР»СѓС‡РёС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚ РІС‹СЂР°Р¶РµРЅРёСЏ
+		@return СЂРµР·СѓР»СЊС‚Р°С‚ РІС‹СЂР°Р¶РµРЅРёСЏ
 	*/
 	public int getResult(){
 		return this.result;
 	}
 	
 	/**
-		Очистить результат вычисления
+		РћС‡РёСЃС‚РёС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёСЃР»РµРЅРёСЏ
 	*/
 	public void clearResult(){
 		this.result = 0;
